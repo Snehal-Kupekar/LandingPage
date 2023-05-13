@@ -6,7 +6,9 @@ const HomePage = () =>{
     <>
     <Container >
         <Nav/>
-        <Box sx={{ 
+        <Box sx={{
+        
+        
         backgroundColor: 'primary.dark',
         '&:hover': {
           backgroundColor: 'primary.main',
