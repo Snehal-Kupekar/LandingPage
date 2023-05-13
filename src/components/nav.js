@@ -1,5 +1,4 @@
 import * as React from "react";
-import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -28,11 +27,7 @@ function DrawerAppBar() {
       onClick={handleDrawerToggle}
       sx={{
         textAlign: "center",
-        // background: "#301E4E",
-        fontSize: 62,
-        fontWeight: 400,
-        lineHeight: 83,
-        fontFamily: "Playfair Display",
+        // background: "#301E4E"
       }}
     >
       <List>
@@ -55,7 +50,6 @@ function DrawerAppBar() {
 
   return (
     <Box>
-      
       <AppBar
         component="nav"
         sx={{
@@ -105,6 +99,10 @@ function DrawerAppBar() {
             "& .MuiDrawer-paper": {
               background: "#301E4E",
               width: drawerWidth,
+              fontSize: 62,
+              fontWeight: 400,
+              lineHeight: 83,
+              fontFamily: "Playfair Display",
             },
           }}
         >
@@ -114,6 +112,5 @@ function DrawerAppBar() {
     </Box>
   );
 }
-
 
 export default DrawerAppBar;

@@ -1,25 +1,14 @@
-import { Box, Container } from '@mui/material';
-import React from 'react'
-import Nav from '../components/nav'
-const HomePage = () =>{
+import { Box } from "@mui/material";
+import React from "react";
+import frame from "../Images/frame1.png";
+const HomePage = () => {
   return (
-    <>
-    <Container >
-        <Nav/>
-        <Box sx={{ 
-        backgroundColor: 'primary.dark',
-        '&:hover': {
-          backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7],
-        },
-      }}>
-            This is box
-        </Box>
-    </Container>
-    </>
-    
-  )
-}
-
+    <Box
+      sx={{ position: "absolute", width: 1440, height: 800, left: 0, top: 119 }}
+    >
+      <img src={frame}></img>
+    </Box>
+  );
+};
 
 export default HomePage;
