@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Nav from './components/nav.js'
+import { Container } from '@mui/material';
+import HomePage from './components/HomePage.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+// here we write function for updatePost button because this is the only component 
+// where both state is present POST as well as FORM which is required 
+
+const App = () => {
+  
+
+    return (
+          <HomePage/>
+    );
 }
 
 export default App;
